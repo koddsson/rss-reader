@@ -1,0 +1,18 @@
+name: Lighthouse
+on: push
+jobs:
+  static-dist-dir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 18
+      - run: npm install && npm install -g @lhci/cli@0.8.x
+      - run: npm run build
+      - uses: treosh/lighthouse-ci-action@v9
+        with:
+          # no urls needed, since it uses local folder to scan .html files
+          configPath: './.lighthouserc.json'
+          uploadArtifacts: true # save results as an action artifacts
+          temporaryPublicStorage: true # upload lighthouse report to the temporary storage

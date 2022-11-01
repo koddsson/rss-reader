@@ -1,0 +1,47 @@
+{
+  "name": "web-dev",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "prebuild": "npm run build:css",
+    "build": "rollup -c rollup.config.js",
+    "build:css": "postcss src/css/index.css -o dist/index.css",
+    "prebuild:js:prod": "npm run build:css",
+    "build:js:prod": "esbuild src/js/index.ts --minify --bundle --format=esm --outfile=dist/index.js",
+    "lint": "eslint src/**/*",
+    "start": "web-dev-server",
+    "test": "web-test-runner"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koddsson/web-dev.git"
+  },
+  "keywords": [],
+  "author": "Kristján Oddsson <hi@koddsson.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koddsson/web-dev/issues"
+  },
+  "prettier": "@github/prettier-config",
+  "homepage": "https://github.com/koddsson/web-dev#readme",
+  "devDependencies": {
+    "@github/prettier-config": "^0.0.4",
+    "@open-wc/testing": "^3.1.6",
+    "@web/dev-server": "^0.1.35",
+    "@web/dev-server-esbuild": "^0.3.3",
+    "@web/rollup-plugin-html": "^1.11.0",
+    "@web/test-runner": "^0.15.0",
+    "eslint": "^8.26.0",
+    "eslint-plugin-github": "^4.4.0",
+    "open-props": "^1.4.16",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.0.0",
+    "postcss-jit-props": "^1.0.7",
+    "prettier": "^2.7.1",
+    "rollup-plugin-esbuild": "^4.10.1"
+  }
+}

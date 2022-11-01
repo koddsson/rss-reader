@@ -1,0 +1,15 @@
+{
+  "include": ["src", "tests"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "lib": ["es6", "dom", "dom.iterable"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2020"
+  }
+}
