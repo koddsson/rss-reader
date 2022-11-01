@@ -1,2 +1,33 @@
 @import "open-props/src/index.css";
 @import "open-props/src/extra/normalize.css";
+@import "open-props/src/extra/buttons.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.date {
+  text-align: right;
+}
+
+a {
+  text-underline-offset: unset;
+}
+
+fieldset {
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}

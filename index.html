@@ -14,6 +14,27 @@
     <link rel="stylesheet" href="./dist/index.css" />
   </head>
   <body>
-    <h1>My app!</h1>
+    <h1>RSS Reader</h1>
+
+    <form>
+      <fieldset>
+        <label for="input">Feed URL</label>
+        <input id="input" placeholder="https://muan.co/feed.xml" />
+      </fieldset>
+      <button>Subscribe to feed</button>
+    </form>
+
+    <div class="items">
+
+    </div>
+
+    <template>
+      <article>
+        <h2 class="title"></h2>
+        <p class="description"></p>
+        <div class="date"></div>
+      </article>
+      <hr>
+    </template>
   </body>
 </html>
