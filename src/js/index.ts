@@ -103,6 +103,12 @@ function renderPosts(posts: Post[]) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  fetchSubscriptions()
-})
+async function ready(): Promise<void> {
+  return new Promise(resolve => {
+    if (document.readyState === 'interactive' || document.readyState === 'complete') resolve()
+    document.addEventListener('DOMContentLoaded', () => resolve())
+  })
+}
+
+await ready()
+fetchSubscriptions()
