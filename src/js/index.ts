@@ -32,6 +32,20 @@ async function getSubscriptions() {
       const text = await response.text()
       cache[sub.url] = {text, date: new Date()}
     }
+
+    if (cache[sub.url]) {
+      const then = new Date(cache[sub.url].date).getTime()
+      const now = new Date().getTime()
+      const oneHour = 60 * 60 * 1000
+      const moreThanOneHourAgo = now - then > oneHour
+
+      if (moreThanOneHourAgo) {
+        const response = await fetch(sub.url)
+        const text = await response.text()
+        cache[sub.url] = {text, date: new Date()}
+      }
+    }
+
     results.push(cache[sub.url])
   }
 
