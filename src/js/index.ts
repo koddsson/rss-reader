@@ -63,8 +63,8 @@ interface Post {
 
 function getPost(item: Element): Post {
   const title = item.querySelector('title')?.textContent || ''
-  const description = item.querySelector('description')?.textContent || ''
-  const date = new Date(item.querySelector('pubDate')?.textContent || '')
+  const description = item.querySelector('description, content')?.textContent || ''
+  const date = new Date(item.querySelector('pubDate, updated')?.textContent || '')
   const link = item.querySelector('link')?.textContent || ''
 
   return {title, description, date, link}
@@ -79,7 +79,7 @@ async function fetchSubscriptions() {
 
   for (const {text} of subscriptionsXML) {
     const doc = parser.parseFromString(text, 'application/xml')
-    for (const item of doc.querySelectorAll('item')) {
+    for (const item of doc.querySelectorAll('item, entry')) {
       const post = getPost(item)
       posts.push(post)
     }
