@@ -1,3 +1,5 @@
+import '@github/time-elements'
+
 const form = document.querySelector('form')
 const input = form?.querySelector('input')!
 const template = document.querySelector('template')
@@ -112,6 +114,7 @@ function renderPosts(posts: Post[]) {
       img.setAttribute('loading', 'lazy')
     }
 
+    t.querySelector('.date')!.setAttribute('datetime', post.date.toString())
     t.querySelector('.date')!.textContent = post.date.toString()
     items?.append(t)
   }
