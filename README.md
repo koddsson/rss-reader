@@ -1,10 +1,4 @@
-# web-dev
+# rss-reader
 
-Here's my preferred setup for web development. Feel free to use this template for your own projects.
-
-## Technology used
-
-- [Web Dev Server]()
-- [Web Test Runner]()
-- [TypeScript]()
-- [ESLint]()
+RSS Reader is a pretty simple RSS reader that doesn't have a backend but only stores data in the browser. Doesn't have a lot of fancy features but is just 
+simple and nice.
