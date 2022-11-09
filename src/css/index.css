@@ -31,3 +31,7 @@ form {
   flex-direction: column;
   margin-bottom: 1em;
 }
+
+relative-time {
+  float: right;
+}
