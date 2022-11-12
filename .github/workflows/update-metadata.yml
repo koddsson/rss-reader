@@ -18,20 +18,19 @@ jobs:
 
           const package = JSON.parse(readFileSync('./package.json'))
 
-          console.log(package)
+          const {owner, repo} = context.repo
+          const {description, homepage, keywords} = package
 
-          console.log({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            description: "",
-            homepage: "",
-            private: "",
-          })
+          octokit.rest.repos.update({
+            owner,
+            repo,
+            description,
+            homepage,
+          });
 
-          // octokit.rest.repos.update({
-          //   owner: context.repo.owner,
-          //   repo: context.repo.repo,
-          //   description: "",
-          //   homepage: "",
-          //   private: "",
-          // });
+          octokit.rest.repos.replaceAllTopics({
+            owner,
+            repo,
+            names: keywords
+          });
+

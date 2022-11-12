@@ -1,7 +1,7 @@
 {
   "name": "web-dev",
   "version": "0.0.1",
-  "description": "",
+  "description": "🏣 A simple RSS reader that doesn't have a backend but only stores data in the browser. Doesn't have a lot of fancy features but is just simple and nice.",
   "type": "module",
   "main": "index.js",
   "module": "index.js",
@@ -19,14 +19,14 @@
     "type": "git",
     "url": "git+https://github.com/koddsson/web-dev.git"
   },
-  "keywords": [],
+  "keywords": ["rss", "reader", "rss-reader", "little-app"],
   "author": "Kristján Oddsson <hi@koddsson.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/koddsson/web-dev/issues"
   },
   "prettier": "@github/prettier-config",
-  "homepage": "https://github.com/koddsson/web-dev#readme",
+  "homepage": "https://koddsson.github.io/rss-reader/",
   "devDependencies": {
     "@github/prettier-config": "^0.0.4",
     "@open-wc/testing": "^3.1.6",
