@@ -20,14 +20,14 @@ jobs:
           const {owner, repo} = context.repo
           const {description, homepage, keywords} = package
 
-          octokit.rest.repos.update({
+          github.rest.repos.update({
             owner,
             repo,
             description,
             homepage,
           });
 
-          octokit.rest.repos.replaceAllTopics({
+          github.rest.repos.replaceAllTopics({
             owner,
             repo,
             names: keywords
