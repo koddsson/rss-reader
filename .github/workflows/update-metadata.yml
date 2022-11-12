@@ -1,0 +1,37 @@
+name: Update metadata
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          import {readFileSync} from 'node:fs'
+
+          const package = JSON.parse(readFileSync('./package.json'))
+
+          console.log(package)
+
+          console.log({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            description: "",
+            homepage: "",
+            private: "",
+          })
+
+          // octokit.rest.repos.update({
+          //   owner: context.repo.owner,
+          //   repo: context.repo.repo,
+          //   description: "",
+          //   homepage: "",
+          //   private: "",
+          // });
