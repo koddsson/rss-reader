@@ -14,7 +14,7 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
-          import {readFileSync} from 'node:fs'
+          const {readFileSync} = require('node:fs')
 
           const package = JSON.parse(readFileSync('./package.json'))
 
