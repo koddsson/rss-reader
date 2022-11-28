@@ -40,6 +40,6 @@ pre {
   background: var(--surface-2);
   border-radius: var(--radius-2);
   margin-bottom: var(--size-2);
-  overflow: scroll;
+  overflow: auto;
   padding: var(--size-1) var(--size-2);
 }
