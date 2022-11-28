@@ -35,3 +35,11 @@ form {
 relative-time {
   float: right;
 }
+
+pre {
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  margin-bottom: var(--size-2);
+  overflow: scroll;
+  padding: var(--size-1) var(--size-2);
+}
