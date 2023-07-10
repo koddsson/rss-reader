@@ -28,7 +28,7 @@
   "prettier": "@github/prettier-config",
   "homepage": "https://koddsson.github.io/rss-reader/",
   "devDependencies": {
-    "@github/prettier-config": "^0.0.4",
+    "@github/prettier-config": "^0.0.6",
     "@open-wc/testing": "^3.2.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@web/dev-server": "^0.2.5",
