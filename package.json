@@ -37,7 +37,7 @@
     "@web/test-runner": "^0.17.1",
     "eslint": "^8.50.0",
     "eslint-plugin-github": "^4.10.0",
-    "open-props": "^1.5.15",
+    "open-props": "^1.5.16",
     "postcss": "^8.4.30",
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
