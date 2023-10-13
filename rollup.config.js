@@ -5,5 +5,5 @@ import {nodeResolve} from '@rollup/plugin-node-resolve'
 export default {
   input: 'index.html',
   output: {dir: 'dist'},
-  plugins: [nodeResolve(), esbuild(), html({input: 'index.html'})]
+  plugins: [nodeResolve(), esbuild({target: 'esnext'}), html({input: 'index.html'})]
 }
