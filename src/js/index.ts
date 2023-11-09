@@ -1,7 +1,9 @@
 import '@github/time-elements'
 
+import './register-service-worker'
+
 const form = document.querySelector('form')
-const input = form?.querySelector('input')!
+const input = form?.querySelector('input')
 const template = document.querySelector('template')
 const items = document.querySelector('.items')
 
@@ -19,7 +21,7 @@ form?.addEventListener('submit', event => {
 
   fetchSubscriptions()
 
-  input.value = ''
+  input!.value = ''
 })
 
 async function getSubscriptions() {
