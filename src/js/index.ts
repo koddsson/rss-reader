@@ -129,5 +129,35 @@ async function ready(): Promise<void> {
   })
 }
 
+// Custom function to emit toast notifications
+//
+// API Documentation: https://shoelace.style/components/alert/
+function notify(message: string, {variant = 'warning', icon = 'exclamation-triangle', duration = 3000} = {}) {
+  const alert = Object.assign(document.createElement('sl-alert'), {
+    variant,
+    closable: true,
+    duration,
+    innerHTML: `
+        <sl-icon name="${icon}" slot="icon"></sl-icon>
+        ${message}
+      `,
+  })
+
+  document.body.append(alert)
+  // @ts-ignore
+  return alert.toast()
+}
+
+if (new URL(window.location.toString(), window.location.origin).searchParams.get('debug') === 'true') {
+  window.addEventListener('unhandledrejection', event => {
+    notify(`[unhandledrejection]: ${event.reason}`)
+  })
+  window.addEventListener('error', event => {
+    notify(`[error]: ${event.type}: ${event.message}\n`, {duration: Infinity})
+  })
+}
+
 await ready()
 fetchSubscriptions()
+
+throw new Error('foobar')
