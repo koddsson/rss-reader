@@ -30,6 +30,8 @@ jobs:
         uses: actions/configure-pages@v2
       - name: Build
         run: npm install && npm run build
+      - name: Output project structure
+        run: tree dist/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
