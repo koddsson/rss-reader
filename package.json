@@ -39,7 +39,7 @@
     "@types/mocha": "^10.0.4",
     "@web/dev-server": "^0.4.0",
     "@web/dev-server-esbuild": "^1.0.1",
-    "@web/rollup-plugin-copy": "^0.5.0",
+    "@web/rollup-plugin-copy": "^0.5.1",
     "@web/rollup-plugin-html": "^2.1.0",
     "@web/test-runner": "^0.18.0",
     "eslint": "^8.53.0",
