@@ -32,21 +32,29 @@ async function getSubscriptions() {
 
   for (const sub of subscriptions) {
     if (!cache[sub.url]) {
-      const response = await fetch(sub.url)
-      const text = await response.text()
-      cache[sub.url] = {text, date: new Date()}
-    }
-
-    if (cache[sub.url]) {
+      try {
+        const response = await fetch(sub.url)
+        const text = await response.text()
+        cache[sub.url] = {text, date: new Date()}
+      } catch (error) {
+        console.error(`Failed to fetch ${sub.url}`, error)
+        continue;
+      }
+    } else {
       const then = new Date(cache[sub.url].date).getTime()
       const now = new Date().getTime()
       const oneHour = 60 * 60 * 1000
       const moreThanOneHourAgo = now - then > oneHour
 
       if (moreThanOneHourAgo) {
-        const response = await fetch(sub.url)
-        const text = await response.text()
-        cache[sub.url] = {text, date: new Date()}
+        try {
+          const response = await fetch(sub.url)
+          const text = await response.text()
+          cache[sub.url] = {text, date: new Date()}
+        } catch (error) {
+          console.error(`Failed to fetch`, error)
+          continue;
+        }
       }
     }
 
