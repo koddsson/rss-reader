@@ -159,5 +159,3 @@ if (new URL(window.location.toString(), window.location.origin).searchParams.get
 
 await ready()
 fetchSubscriptions()
-
-throw new Error('foobar')
