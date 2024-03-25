@@ -45,7 +45,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-github": "^4.10.2",
     "open-props": "^1.6.21",
-    "postcss": "^8.4.36",
+    "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",
     "postcss-jit-props": "^1.0.14",
