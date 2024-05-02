@@ -1,5 +1,5 @@
 {
-  "name": "web-dev",
+  "name": "rss-reader",
   "version": "0.0.1",
   "description": "🏣 A simple RSS reader that doesn't have a backend but only stores data in the browser. Doesn't have a lot of fancy features but is just simple and nice.",
   "type": "module",
@@ -17,23 +17,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koddsson/web-dev.git"
+    "url": "git+https://github.com/koddsson/rss-reader.git"
   },
-  "keywords": [
-    "rss",
-    "reader",
-    "rss-reader",
-    "little-app"
-  ],
+  "keywords": ["rss", "reader", "rss-reader", "little-app"],
   "author": "Kristján Oddsson <hi@koddsson.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/koddsson/web-dev/issues"
+    "url": "https://github.com/koddsson/rss-reader/issues"
   },
-  "prettier": "@github/prettier-config",
+  "prettier": "@koddsson/prettier-config",
   "homepage": "https://koddsson.github.io/rss-reader/",
   "devDependencies": {
-    "@github/prettier-config": "^0.0.6",
+    "@koddsson/eslint-config": "^1.1.0",
+    "@koddsson/prettier-config": "^2.0.0",
     "@open-wc/testing": "^4.0.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/mocha": "^10.0.6",
@@ -43,7 +39,6 @@
     "@web/rollup-plugin-html": "^2.3.0",
     "@web/test-runner": "^0.18.1",
     "eslint": "^8.57.0",
-    "eslint-plugin-github": "^4.10.2",
     "open-props": "^1.7.4",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
