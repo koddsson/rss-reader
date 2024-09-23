@@ -31,7 +31,7 @@
     "@koddsson/eslint-config": "^1.1.0",
     "@koddsson/prettier-config": "^2.0.0",
     "@open-wc/testing": "^4.0.0",
-    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-node-resolve": "^15.2.4",
     "@types/mocha": "^10.0.8",
     "@web/dev-server": "^0.4.6",
     "@web/dev-server-esbuild": "^1.0.2",
