@@ -43,7 +43,7 @@
     "postcss": "^8.4.49",
     "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",
-    "postcss-jit-props": "^1.0.14",
+    "postcss-jit-props": "^1.0.15",
     "prettier": "^3.4.2",
     "rollup-plugin-esbuild": "^6.1.1"
   },
