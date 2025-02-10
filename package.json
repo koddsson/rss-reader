@@ -45,7 +45,7 @@
     "postcss-import": "^16.1.0",
     "postcss-jit-props": "^1.0.15",
     "prettier": "^3.5.0",
-    "rollup-plugin-esbuild": "^6.1.1"
+    "rollup-plugin-esbuild": "^6.2.0"
   },
   "dependencies": {
     "@github/time-elements": "^4.0.0"
