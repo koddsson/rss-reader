@@ -38,7 +38,7 @@
     "@web/rollup-plugin-copy": "^0.5.1",
     "@web/rollup-plugin-html": "^2.3.0",
     "@web/test-runner": "^0.20.2",
-    "eslint": "^9.27.0",
+    "eslint": "^9.28.0",
     "open-props": "^1.7.15",
     "postcss": "^8.5.3",
     "postcss-cli": "^11.0.1",
