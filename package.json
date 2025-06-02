@@ -28,7 +28,7 @@
   "prettier": "@koddsson/prettier-config",
   "homepage": "https://koddsson.github.io/rss-reader/",
   "devDependencies": {
-    "@koddsson/eslint-config": "^1.1.0",
+    "@koddsson/eslint-config": "^2.0.0",
     "@koddsson/prettier-config": "^2.0.0",
     "@open-wc/testing": "^4.0.0",
     "@rollup/plugin-node-resolve": "^16.0.1",
