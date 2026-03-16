@@ -28,7 +28,7 @@
   "prettier": "@koddsson/prettier-config",
   "homepage": "https://koddsson.github.io/rss-reader/",
   "devDependencies": {
-    "@koddsson/eslint-config": "^2.0.1",
+    "@koddsson/eslint-config": "^4.0.2",
     "@koddsson/prettier-config": "^2.0.0",
     "@open-wc/testing": "^4.0.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
@@ -38,7 +38,7 @@
     "@web/rollup-plugin-copy": "^0.5.1",
     "@web/rollup-plugin-html": "^3.1.0",
     "@web/test-runner": "^0.20.2",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.3",
     "open-props": "^1.7.23",
     "postcss": "^8.5.8",
     "postcss-cli": "^11.0.1",
