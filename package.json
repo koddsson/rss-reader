@@ -30,7 +30,7 @@
   "devDependencies": {
     "@koddsson/eslint-config": "^4.0.2",
     "@koddsson/prettier-config": "^2.0.0",
-    "@open-wc/testing": "^4.0.0",
+    "@open-wc/testing": "^5.0.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@types/mocha": "^10.0.10",
     "@web/dev-server": "^1.0.0",
