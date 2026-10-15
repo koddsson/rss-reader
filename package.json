@@ -40,7 +40,7 @@
     "@web/test-runner": "^1.0.0",
     "eslint": "^10.12.0",
     "open-props": "^1.7.23",
-    "postcss": "^8.5.28",
+    "postcss": "^8.5.29",
     "postcss-cli": "^12.0.0",
     "postcss-import": "^17.0.0",
     "postcss-jit-props": "^1.0.16",
